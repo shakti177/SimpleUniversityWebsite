@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/2ac6261640.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 
     <title>Demo Website</title>
@@ -34,7 +36,7 @@
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
-        <h1>About Us</h1>
+        <h1 data-aos="slide-up" data-aos-duration="1500">About Us</h1>
 
     </section>
 
@@ -43,13 +45,13 @@
     <section class="about-us">
         <div class="row">
             <div class="about-col">
-                <h1>We are the World's Largest University</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quae officia aperiam assumenda suscipit
+                <h1 data-aos="slide-right" data-aos-duration="1500">We are the World's Largest University</h1>
+                <p data-aos="fade-in" data-aos-duration="1500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quae officia aperiam assumenda suscipit
                     iure corrupti magnam expedita omnis nostrum laborum, fuga ducimus ab necessitatibus laboriosam esse
                     mollitia maiores magni.</p>
-                <a href="" class="hero-button red-btn">EXPLORE NOW</a>
+                <a href="" class="hero-button red-btn" data-aos="zoom-in" data-aos-duration="1500">EXPLORE NOW</a>
             </div>
-            <div class="about-col">
+            <div class="about-col" data-aos="slide-left" data-aos-duration="1500">
                 <img src="/images/about.jpg">
             </div>
         </div>
@@ -57,7 +59,7 @@
 
     <!-- footer -->
 
-    <section class="footer">
+    <section class="footer" data-aos="fade-up" data-aos-duration="1500">
         <h4>About Us</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus distinctio, ipsa non error praesentium
             architecto eum aspernatur<br>incidunt facere sed, voluptatum inventore rerum corrupti perferendis
@@ -87,6 +89,10 @@
 
 
     </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
